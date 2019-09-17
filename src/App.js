@@ -73,7 +73,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path='/'
+                path='/github-finder'
                 render={props => (
                   <Fragment>
                     <Search
@@ -86,10 +86,10 @@ class App extends Component {
                   </Fragment>
                 )}
               />
-              <Route exact path='/about' component={About} />
+              <Route exact path='/github-finder/about' component={About} />
               <Route
                 exact
-                path='/user/:login'
+                path='/github-finder/user/:login'
                 render={props => (
                   <User
                     {...props}
